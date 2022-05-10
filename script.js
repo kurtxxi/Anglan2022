@@ -5,7 +5,7 @@ function start(){
     $("ul.nav a:first").click()
 }
 
-$(document).on("click", "ul.nav a", nav);
+$(document).on("click", "ul.nav a", nav)    
 
 function nav(e){
     e.preventDefault();
@@ -15,3 +15,4 @@ function nav(e){
     $(this).addClass("active");
 
 }
+
