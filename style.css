@@ -19,6 +19,7 @@ body {
 }
 .logo {
     display: inline-block;
+    top: 
     vertical-align: top;
     width: 50px;
     height: 50px;
@@ -37,6 +38,10 @@ body {
 
 .nav-link {
     color:#805454;
+}
+
+.nav-link:hover {
+    color: #330000;
 }
 
 .carousel-item {
@@ -70,11 +75,11 @@ body {
 .look .look-overlay {
     background: #330000;
     position: absolute;
-    height: 99%;
-    width: 100%;
+    height: 950px;
+    width: 750px;
     left: 0;
-    top: 0;
-    bottom: 0;
+    top: 922px;
+    bottom: 0px;
     right: 0;
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out 0s;
@@ -93,7 +98,7 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     width: 100%;
-    top: 50%;
+    top: 90%;
     left: 50%;
     opacity: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -112,7 +117,7 @@ body {
   
 .look-details h5{
     color: #fff;
-    font-size: 0.8em;
+    font-size: 70px;
     font-family: 'Stretch Pro';
 }
 
@@ -127,6 +132,13 @@ h6 {
     font-family: 'Stretch Pro';
     font-size: 80px;
     padding-top: 70px;
+    color: #330000;
+}
+
+h10 {
+    margin-left: 420px;
+    font-family: 'Stretch Pro';
+    font-size: 80px;
     color: #330000;
 }
 
@@ -162,6 +174,11 @@ h6 {
     height: 370px;
     transition: .5s;
     filter: saturate(10%);
+    border-radius: 60%;
+}
+
+.pic {
+    border-radius: 30px;
 }
 
 .button{
@@ -170,6 +187,7 @@ h6 {
     height: 370px;
     transition: .5s;
     background-color: rgba(0, 0, 0, .4);
+    border-radius: 30px;
 }
 
 .button:hover{
@@ -251,8 +269,6 @@ p {
 .columnright {
     float: right;
     width: 50%;
-    
-    
 }
 
 
@@ -310,7 +326,7 @@ h4 {
 
 
   
-  .container {
+.container {
     width: 850px;
     margin: 70px auto 0px auto;
     text-align: center;
@@ -321,39 +337,20 @@ h4 {
     top: 1450px;
     background: #212121;
     border-radius: 50px;
-    
-    
-.button-effect {
-    padding: 30px 0px; 
-      
-      a {
-            margin-right: 17px;
-            color: #FDC9CC;
-            :nth-child(2) {
-            background-color: $button-bg-1;
-            }
-            
-            :last-child {
-            margin-right: 0px;
-        }
-}
-  
-    .effect {
-        text-align: center;
-        color: #FDC9CC;
-        display: inline-block;
-        position: relative;
-        text-decoration: none;
-        text-transform: capitalize;
-        font-family: 'Roboto', sans-serif; 
-        font-size: 18px;
-    }
-    padding: 20px 0px;
-    width: 150px;
-    border-radius: $border-radius;
-    overflow: hidden;
 }
 
+  
+.effect {
+    text-align: center;
+    color: #805454;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Stretch pro'; 
+    font-size: 18px;
+}
+  
 
 .effect.effect-1 {
   transition: all 0.2s linear 0s;
@@ -373,24 +370,122 @@ h4 {
         width: 40px;
         transition: all 0.2s linear 0s;
     }
-  
-    hover {
-        text-indent: -20px;
-    
-        before {
-            opacity: 1;
-            text-indent: 0px;
-        }
-    }
+
 }
 
+.box {
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0, .2);
+    border-radius: 10px;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
 
+.slide-img {
+    height: 390px;
+    position: relative;
+}
 
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
 
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
 
+.type {
+    display: flex;
+    flex-direction: column;
+}
 
-    
+.type a {
+    color: #222222;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
 
+.type span {
+    color:  rgba (26, 26, 26, 0.5);
+}
 
+.title {
+    font-family: 'Stretch Pro';
+}
 
+.description {
+    font-size: 10px;
+}
+.price {
+    color: #333333;
+    font-weight: 600px;
+    font-size: 1.1rem;
+    font-family: 'Stretch Pro';
+    letter-spacing: 0.5px ;
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #330000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #330000;
+    color: #805454;
+    font: 'Stretch Pro';
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0,0.2);
+}
+
+.buy-btn:hover {
+    color: #330000;
+    background-color: #B7A378;
+    transition: all ease 0.3s;
+}
+
+.overlay {
+    visibility: hidden;
+}
+
+.slide-img:hover .overlay {
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
